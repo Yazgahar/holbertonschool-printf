@@ -58,6 +58,12 @@ The flags in the format string must have the following structure
 | %u | Print unsigned decimal |
 | %p | Print pointer |
 
+# Flowchar
+
+![Screenshot of the flowchar](https://cdn.discordapp.com/attachments/1158416806176890882/1177316088128753786/Flowchart_Anas.jpg?ex=6572100c&is=655f9b0c&hm=8eb08f1a381e9985f04562671ac4314ac693d6df0046cb8302ce6df05924ca26&)
+
+
+
 
 ## Authors
 
