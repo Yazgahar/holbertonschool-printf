@@ -10,5 +10,5 @@
 int print_modulo(va_list args)
 {
 	(void)args;
-	return (_putcher('%'));
+	return (_putchar('%'));
 }
