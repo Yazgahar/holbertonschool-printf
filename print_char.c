@@ -11,8 +11,8 @@ int print_char(va_list args)
 {
 	char c = va_arg(args, int);
 
-	if (!char)
-		return ("(null)");
+	if (!c)
+		c = "(null)";
 
 	else
 	_putchar(c);
