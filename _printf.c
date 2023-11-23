@@ -41,8 +41,8 @@ int _printf(const char *format, ...)
 		else
 		{
 			(count == -1) ? (_putchar(format[i])) : (count += _putchar(format[i]));
+			i++;
 		}
-		i++;
 
 		if (count != -1)
 			count += count_fun;
