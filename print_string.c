@@ -5,13 +5,13 @@
 /**
  * print_string - Prototypes
  * @args: arguments
- * Return: totalCharacter 
+ * Return: totalCharacter
  */
 
 int print_string(va_list args)
 {
 	int i;
-	int totalCharacter
+	int totalCharacter;
 	char *str = va_arg(args, char *);
 
 	if (!str)
