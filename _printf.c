@@ -35,7 +35,7 @@ int _printf(const char *format, ...)
 				count += _putchar(format[i + 1]);
 
 			if (count_fun == -1)
-				count = -1;
+				count += _putchar(format[i]);
 			i++;
 		}
 		else
