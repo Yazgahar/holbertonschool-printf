@@ -30,8 +30,10 @@ int _printf(const char *format, ...)
 				break;
 			}
 			count_fun += function(format[i + 1], args);
+
 			if (count_fun == 0)
 				count += _putchar(format[i + 1]);
+
 			if (count_fun == -1)
 				count = -1;
 			i++;
@@ -41,6 +43,7 @@ int _printf(const char *format, ...)
 			(count == -1) ? (_putchar(format[i])) : (count += _putchar(format[i]));
 		}
 		i++;
+
 		if (count != -1)
 			count += count_fun;
 	}
