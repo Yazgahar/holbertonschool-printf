@@ -1,0 +1,53 @@
+"_printf man page"
+
+_printf (custom version)
+
+_printf FORMAT [ARGUMENT]...
+
+int _printf(const char *format, ...)
+ 
+Print argument(s) according to format provided.
+
+The _printf function replicates the functionality of the C standard library function printf.
+
+_printf takes an indefinite number of arguments. 
+
+ The percentage sign (%) indicates the start of the format specifier.
+ Format specifier are mandatory to indicates the type of data being printed.
+
+EXAMPLE:
+
+%c
+prints character
+
+%s
+prints string
+
+%%
+prints percentage symbol
+
+%d
+prints digit
+
+%i
+prints integer
+
+%o
+prints octal
+
+%x
+prints lowercase hexadecimal
+
+%X
+prints uppercase hexadecimal
+
+%u
+prints unsign
+
+%p
+print pointer
+
+Authors
+BATTI Anas and COLAS François
+
+Copyright © 2023 Holberton School
