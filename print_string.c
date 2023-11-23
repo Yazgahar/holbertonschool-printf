@@ -5,13 +5,12 @@
 /**
  * print_string - Prototypes
  * @args: arguments
- * Return: totalCharacters
+ * Return: i
  */
 
 int print_string(va_list args)
 {
 	int i;
-	int totalCharacters = 0;
 	char *str = va_arg(args, char *);
 
 	if (!str)
@@ -21,7 +20,7 @@ int print_string(va_list args)
 		return (-1);
 
 	for (i = 0; str[i] != '\0'; i++)
-		totalCharacters += _putchar(str[i]);
+		_putchar(str[i]);
 
-	return (totalCharacters);
+	return (i);
 }
