@@ -11,32 +11,22 @@ int _printf(const char *format, ...)
 {
 	int i = 0;
 	int count = 0;
-	int count_fun;
 	va_list args;
 
 	va_start(args, format);
-	if (!format || (format[0] == '%' && !format[1]))
+
+	if (!format)
 		return (-1);
-	if (format[0] == '%' && format[1] == ' ' && !format[2])
-		return (-1);
-	while (format[i])
+
+	while (!format && format[i] != '\0')
 	{
-		count_fun = 0;
 		if (format[i] == '%')
 		{
-			if (!format[i + 1] || (format[i + 1] == ' ' && !format[i + 2]))
-			{
-				count = -1;
-				break;
-			}
-			count_fun += function(format[i + 1], args);
+			if (!format[i + 1] == '\0')
+				return (-1);
 
-			if (count_fun == 0)
-				count += _putchar(format[i + 1]);
-
-			if (count_fun == -1)
-				count = -1;
-			i++;
+			count += function(format[i + 1], args);
+			i += 2;
 		}
 		else
 		{
